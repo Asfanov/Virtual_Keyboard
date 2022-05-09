@@ -100,7 +100,7 @@ let keyboardRow5 = document.querySelector('.keyboardRow').cloneNode(true);
 // вторая строка
 
 let keyTAB = document.createElement('div');
-    keyTAB.className = 'keyTAB';
+    keyTAB.className = 'keyTAB tab';
     keyTAB.innerHTML = "TAB";
     document.querySelectorAll('.keyboardRow')[1].append(keyTAB);
 
@@ -170,7 +170,7 @@ let keyRightSlash = document.createElement('div');
     document.querySelectorAll('.keyboardRow')[1].append(keyRightSlash);
 
 let keyDel = document.createElement('div');
-    keyDel.className = 'keyTAB';
+    keyDel.className = 'keyDel keyTAB';
     keyDel.innerHTML = 'Del';
     document.querySelectorAll(".keyboardRow")[1].append(keyDel);
 
@@ -178,7 +178,7 @@ let keyDel = document.createElement('div');
 
     
 let keyCapsLock = document.createElement('div');
-    keyCapsLock.className = 'keyBACK';
+    keyCapsLock.className = 'keyBACK keyCAPS ';
     keyCapsLock.innerHTML = 'Caps Lock';
     document.querySelectorAll(".keyboardRow")[2].append(keyCapsLock);
 
@@ -329,7 +329,8 @@ let alt = document.createElement('div');
     document.querySelectorAll(".keyboardRow")[4].append(alt);
 
 let space = document.createElement('div');
-    space.className = 'space';
+    space.className = 'space key';
+    space.innerHTML = ' '
     document.querySelectorAll(".keyboardRow")[4].append(space); 
 
 let rightAlt = alt.cloneNode(true);
@@ -353,6 +354,44 @@ let keyRight = document.createElement('div');
     keyRight.innerHTML = '⮞';
     document.querySelectorAll(".keyboardRow")[4].append(keyRight);
 
+//начало скрипта ввода символов
 
+let keys  = document.querySelectorAll('.key');
+let display = document.querySelector('.textArea');
+let clear = document.querySelector('.keyBACK');
+let delClear = document.querySelector('.keyDel');
+let tab = document.querySelector('.tab');
+let capsLock = document.querySelector('.capsLock');
+let keyCAPS = document.querySelector('.keyCAPS');
 
+for (let key of keys) {
+    key.onclick = function () {
+    
 
+        if(keyCAPS.classList.contains('capsLock')){
+            display.textContent += key.textContent;
+            console.log('123');
+        } else {
+            display.textContent += key.textContent.toLowerCase();
+        }
+    }
+
+  };
+
+  clear.onclick = function () {
+    display.textContent = display.textContent.replace(/.$/i, '');
+    console.log('backSpace');
+  };
+
+  delClear.onclick = function () {
+    display.textContent = display.textContent.replace(/./i, '');
+    console.log('keyDel');
+  };
+
+  tab.onclick = function() {
+      display.textContent = display.textContent + "    ";
+  }
+
+   keyCAPS.onclick = function() {
+     keyCAPS.classList.toggle('capsLock');
+    }

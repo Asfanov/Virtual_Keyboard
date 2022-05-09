@@ -215,4 +215,8 @@ select {
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
 }
+
+.capsLock {
+  background-color: #FF8E00;
+}
 /*# sourceMappingURL=style.css.map */
