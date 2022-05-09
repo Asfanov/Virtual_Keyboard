@@ -235,7 +235,8 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid #FF8E00;
+  border: 2px solid #FF8E00;
+  border-radius: 5px;
   color: #24587A;
   font-size: 32px;
   font-family: Arial, Helvetica, sans-serif;

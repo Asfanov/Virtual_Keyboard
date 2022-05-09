@@ -187,7 +187,8 @@ $color-straw: #FFC173; //соломенный
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid $color-orange;
+  border: 2px solid $color-orange;
+  border-radius: 5px;
   color: $color-secondary;
   font-size: 32px;
   font-family: Arial, Helvetica, sans-serif;
