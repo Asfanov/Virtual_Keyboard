@@ -402,5 +402,4 @@ for (let key of keys) {
                 i.innerHTML = i.innerHTML.toUpperCase();
             }
         }
-        
     }
