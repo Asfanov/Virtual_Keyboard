@@ -308,23 +308,25 @@ let keyUp = document.createElement('div');
     document.querySelectorAll(".keyboardRow")[3].append(keyUp);
 
     
-let rigthShift = keyShift.cloneNode(true);
+let rigthShift = document.createElement('div');
+    rigthShift.className = 'rightShift';
+    rigthShift.innerHTML = 'shift';
     document.querySelectorAll(".keyboardRow")[3].append(rigthShift);
 
 //пятый ряд
 
 let ctrl = document.createElement('div');
-    ctrl.className = 'key';
+    ctrl.className = 'keyALT_CTRL';
     ctrl.innerHTML = 'ctrl';
     document.querySelectorAll(".keyboardRow")[4].append(ctrl);
 
 let win = document.createElement('div');
-    win.className = 'key';
+    win.className = 'keyALT_CTRL';
     win.innerHTML = 'win';
     document.querySelectorAll(".keyboardRow")[4].append(win);
 
 let alt = document.createElement('div');
-    alt.className = 'key';
+    alt.className = 'keyALT_CTRL';
     alt.innerHTML = 'alt';
     document.querySelectorAll(".keyboardRow")[4].append(alt);
 
@@ -336,7 +338,7 @@ let space = document.createElement('div');
 let rightAlt = alt.cloneNode(true);
     document.querySelectorAll(".keyboardRow")[4].append(rightAlt);
 
-let rightCtrl = alt.cloneNode(true);
+let rightCtrl = ctrl.cloneNode(true);
     document.querySelectorAll(".keyboardRow")[4].append(rightCtrl);
 
 let keyleft = document.createElement('div');
