@@ -81,4 +81,138 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+.textArea {
+  width: 50%;
+  height: 200px;
+  display: block;
+  margin: 10% auto 0;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.keyboardBody {
+  width: 80%;
+  height: 400px;
+  margin: 20px auto 0;
+  border: 2px solid #0A67A3;
+}
+
+.keyboardRow {
+  width: 100%;
+  height: 18.8%;
+  margin-bottom: 0.5%;
+  border: 1px solid #24587A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.key {
+  width: 5.5%;
+  height: 100%;
+  text-align: center;
+  background-color: #0f4061;
+  color: #e8eff3;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.key:hover {
+  cursor: pointer;
+}
+
+.key:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.keyArrow {
+  width: 5.5%;
+  height: 100%;
+  text-align: center;
+  background-color: #FF8E00;
+  color: #0A67A3;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.keyTAB {
+  width: 12%;
+  height: 100%;
+  text-align: center;
+  border: 1px solid #FF8E00;
+  color: #24587A;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.keyTAB:hover {
+  cursor: pointer;
+}
+
+.keyTAB:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.keyBACK {
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  border: 1px solid #FF8E00;
+  color: #24587A;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.keyBACK:hover {
+  cursor: pointer;
+}
+
+.keyBACK:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.keyEnter {
+  width: 13%;
+  height: 100%;
+  text-align: center;
+  border: 1px solid #FF8E00;
+  color: #24587A;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.keyEnter:hover {
+  cursor: pointer;
+}
+
+.keyEnter:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.space {
+  width: 51%;
+  height: 100%;
+  text-align: center;
+  border: 1px solid #FF8E00;
+  color: #24587A;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.space:hover {
+  cursor: pointer;
+}
+
+.space:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
 /*# sourceMappingURL=style.css.map */

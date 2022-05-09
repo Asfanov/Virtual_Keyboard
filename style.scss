@@ -78,3 +78,118 @@ select {
 }
 // окончание обнуляющих стилей
 
+
+//colors
+$color-main: #0A67A3;	
+$color-secondary: #24587A;
+$color-orange: #FF8E00;
+$color-straw: #FFC173; //соломенный
+// https://colorscheme.ru/#3v21Tw0w0w0w0
+
+.textArea{
+  width: 50%;
+  height: 200px;
+  display: block;
+  margin: 10% auto 0;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.keyboardBody{
+    width: 80%;
+    height: 400px;
+    margin: 20px auto 0;
+    border: 2px solid $color-main;
+}
+.keyboardRow{
+    width: 100%;
+    height: 18.8%;
+    margin-bottom: 0.5%;
+    border: 1px solid $color-secondary;
+    display: flex;
+    justify-content: space-between;
+  }
+.key{
+  width: 5.5%;
+  height: 100%;
+  text-align: center;
+  background-color: #0f4061;
+  color: #e8eff3;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+    &:hover{
+      cursor: pointer;
+    }
+    &:active{
+      transform: scale(0.97);
+    }
+}
+.keyArrow {
+  width: 5.5%;
+  height: 100%;
+  text-align: center;
+  background-color: $color-orange;
+  color: $color-main;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.keyTAB{
+  width: 12%;
+  height: 100%;
+  text-align: center;
+  border: 1px solid $color-orange;
+  color: $color-secondary;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  &:hover{
+    cursor: pointer;
+  }
+  &:active{
+    transform: scale(0.97);
+  }
+}
+.keyBACK{
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  border: 1px solid $color-orange;
+  color: $color-secondary;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+   &:hover{
+      cursor: pointer;
+    }
+    &:active{
+      transform: scale(0.97);
+    }
+}
+.keyEnter{
+  width: 13%;
+  height: 100%;
+  text-align: center;
+  border: 1px solid $color-orange;
+  color: $color-secondary;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  &:hover{
+    cursor: pointer;
+  }
+  &:active{
+    transform: scale(0.97);
+  }
+}
+.space{
+  width: 51%;
+  height: 100%;
+  text-align: center;
+  border: 1px solid $color-orange;
+  color: $color-secondary;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  &:hover{
+    cursor: pointer;
+  }
+  &:active{
+    transform: scale(0.97);
+  }
+}
