@@ -94,7 +94,7 @@ let keyboardRow5 = document.querySelector('.keyboardRow').cloneNode(true);
 
     let keyBack = document.createElement('div');
         keyBack.className = 'keyBACK';
-        keyBack.innerHTML = 'Backsplace';
+        keyBack.innerHTML = 'Backspace';
         document.querySelector('.keyboardRow').append(keyBack);
 
 // вторая строка
@@ -106,52 +106,52 @@ let keyTAB = document.createElement('div');
 
 let keyQ = document.createElement('div');
     keyQ.className = 'key';
-    keyQ.innerHTML = "Q";
+    keyQ.innerHTML = "q";
     document.querySelectorAll('.keyboardRow')[1].append(keyQ);
 
 let keyW = document.createElement('div');
     keyW.className = 'key';
-    keyW.innerHTML = "W";
+    keyW.innerHTML = "w";
     document.querySelectorAll('.keyboardRow')[1].append(keyW);
 
 let keyE = document.createElement('div');
     keyE.className = 'key';
-    keyE.innerHTML = "E";
+    keyE.innerHTML = "e";
     document.querySelectorAll('.keyboardRow')[1].append(keyE);
 
 let keyR = document.createElement('div');
     keyR.className = 'key';
-    keyR.innerHTML = "R";
+    keyR.innerHTML = "r";
     document.querySelectorAll('.keyboardRow')[1].append(keyR);
 
 let keyT = document.createElement('div');
     keyT.className = 'key';
-    keyT.innerHTML = "T";
+    keyT.innerHTML = "t";
     document.querySelectorAll('.keyboardRow')[1].append(keyT);
 
 let keyY = document.createElement('div');
     keyY.className = 'key';
-    keyY.innerHTML = "Y";
+    keyY.innerHTML = "y";
     document.querySelectorAll('.keyboardRow')[1].append(keyY);
 
 let keyU = document.createElement('div');
     keyU.className = 'key';
-    keyU.innerHTML = "U";
+    keyU.innerHTML = "u";
     document.querySelectorAll('.keyboardRow')[1].append(keyU);
 
 let keyI = document.createElement('div');
     keyI.className = 'key';
-    keyI.innerHTML = "I";
+    keyI.innerHTML = "i";
     document.querySelectorAll('.keyboardRow')[1].append(keyI);
 
 let keyO = document.createElement('div');
     keyO.className = 'key';
-    keyO.innerHTML = "O";
+    keyO.innerHTML = "o";
     document.querySelectorAll('.keyboardRow')[1].append(keyO);
 
 let keyP = document.createElement('div');
     keyP.className = 'key';
-    keyP.innerHTML = "P";
+    keyP.innerHTML = "p";
     document.querySelectorAll('.keyboardRow')[1].append(keyP);
 
 let keyLeftBracked = document.createElement('div');
@@ -184,47 +184,47 @@ let keyCapsLock = document.createElement('div');
 
 let keyA = document.createElement('div');
     keyA.className = 'key';
-    keyA.innerHTML = 'A';
+    keyA.innerHTML = 'a';
     document.querySelectorAll(".keyboardRow")[2].append(keyA);
 
 let keyS = document.createElement('div');
     keyS.className = 'key';
-    keyS.innerHTML = 'S';
+    keyS.innerHTML = 's';
     document.querySelectorAll(".keyboardRow")[2].append(keyS);
 
 let keyD = document.createElement('div');
     keyD.className = 'key';
-    keyD.innerHTML = 'D';
+    keyD.innerHTML = 'd';
     document.querySelectorAll(".keyboardRow")[2].append(keyD);
 
 let keyF = document.createElement('div');
     keyF.className = 'key';
-    keyF.innerHTML = 'F';
+    keyF.innerHTML = 'f';
     document.querySelectorAll(".keyboardRow")[2].append(keyF);
 
 let keyG = document.createElement('div');
     keyG.className = 'key';
-    keyG.innerHTML = 'G';
+    keyG.innerHTML = 'g';
     document.querySelectorAll(".keyboardRow")[2].append(keyG);
 
 let keyH = document.createElement('div');
     keyH.className = 'key';
-    keyH.innerHTML = 'H';
+    keyH.innerHTML = 'h';
     document.querySelectorAll(".keyboardRow")[2].append(keyH);
 
 let keyJ = document.createElement('div');
     keyJ.className = 'key';
-    keyJ.innerHTML = 'J';
+    keyJ.innerHTML = 'j';
     document.querySelectorAll(".keyboardRow")[2].append(keyJ);
 
 let keyK = document.createElement('div');
     keyK.className = 'key';
-    keyK.innerHTML = 'K';
+    keyK.innerHTML = 'k';
     document.querySelectorAll(".keyboardRow")[2].append(keyK);
 
 let keyL = document.createElement('div');
     keyL.className = 'key';
-    keyL.innerHTML = 'L';
+    keyL.innerHTML = 'l';
     document.querySelectorAll(".keyboardRow")[2].append(keyL);
 
 let keySemicolon = document.createElement('div');
@@ -254,37 +254,37 @@ let leftKeyRigthSlash = keyRightSlash.cloneNode(true);
 
 let keyZ = document.createElement('div');
     keyZ.className = 'key';
-    keyZ.innerHTML = 'Z';
+    keyZ.innerHTML = 'z';
     document.querySelectorAll(".keyboardRow")[3].append(keyZ);
 
 let keyX = document.createElement('div');
     keyX.className = 'key';
-    keyX.innerHTML = 'X';
+    keyX.innerHTML = 'x';
     document.querySelectorAll(".keyboardRow")[3].append(keyX);
 
 let keyC = document.createElement('div');
     keyC.className = 'key';
-    keyC.innerHTML = 'C';
+    keyC.innerHTML = 'c';
     document.querySelectorAll(".keyboardRow")[3].append(keyC);
 
 let keyV = document.createElement('div');
     keyV.className = 'key';
-    keyV.innerHTML = 'V';
+    keyV.innerHTML = 'v';
     document.querySelectorAll(".keyboardRow")[3].append(keyV);
 
 let keyB = document.createElement('div');
     keyB.className = 'key';
-    keyB.innerHTML = 'B';
+    keyB.innerHTML = 'b';
     document.querySelectorAll(".keyboardRow")[3].append(keyB);
 
 let keyN = document.createElement('div');
     keyN.className = 'key';
-    keyN.innerHTML = 'N';
+    keyN.innerHTML = 'n';
     document.querySelectorAll(".keyboardRow")[3].append(keyN);
 
 let keyM = document.createElement('div');
     keyM.className = 'key';
-    keyM.innerHTML = 'M';
+    keyM.innerHTML = 'm';
     document.querySelectorAll(".keyboardRow")[3].append(keyM);
 
 let keyDot = document.createElement('div');
@@ -365,18 +365,16 @@ let capsLock = document.querySelector('.capsLock');
 let keyCAPS = document.querySelector('.keyCAPS');
 
 for (let key of keys) {
-    key.onclick = function () {
-    
 
+    key.onclick = function () {
         if(keyCAPS.classList.contains('capsLock')){
             display.textContent += key.textContent;
-            console.log('123');
-        } else {
+            } else {
             display.textContent += key.textContent.toLowerCase();
+            }
         }
-    }
 
-  };
+ };
 
   clear.onclick = function () {
     display.textContent = display.textContent.replace(/.$/i, '');
@@ -390,8 +388,19 @@ for (let key of keys) {
 
   tab.onclick = function() {
       display.textContent = display.textContent + "    ";
+  };
+  keyEnter.onclick = function() {
+      display.textContent += '\n';
+      console.log('enter');
   }
 
    keyCAPS.onclick = function() {
      keyCAPS.classList.toggle('capsLock');
+        for(let i of keys){
+            i.innerHTML = i.innerHTML.toLowerCase();
+            if(keyCAPS.classList.contains('capsLock')){
+                i.innerHTML = i.innerHTML.toUpperCase();
+            }
+        }
+        
     }
