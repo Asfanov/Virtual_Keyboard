@@ -131,11 +131,14 @@ select {
 
 .key:hover {
   cursor: pointer;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  border: 1px solid #24587A;
 }
 
 .key:active {
-  -webkit-transform: scale(0.97);
-          transform: scale(0.97);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .keyArrow {
@@ -160,11 +163,14 @@ select {
 
 .keyArrow:hover {
   cursor: pointer;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  border: 1px solid #24587A;
 }
 
 .keyArrow:active {
-  -webkit-transform: scale(0.97);
-          transform: scale(0.97);
+  -webkit-transform: scale(0.94);
+          transform: scale(0.94);
 }
 
 .keyTAB {
@@ -188,6 +194,8 @@ select {
 
 .keyTAB:hover {
   cursor: pointer;
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
 }
 
 .keyTAB:active {
@@ -216,11 +224,13 @@ select {
 
 .keyBACK:hover {
   cursor: pointer;
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
 }
 
 .keyBACK:active {
-  -webkit-transform: scale(0.97);
-          transform: scale(0.97);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .keyEnter {
@@ -244,11 +254,13 @@ select {
 
 .keyEnter:hover {
   cursor: pointer;
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
 }
 
 .keyEnter:active {
-  -webkit-transform: scale(0.97);
-          transform: scale(0.97);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .space {
@@ -296,6 +308,8 @@ select {
 
 .keyALT_CTRL:hover {
   cursor: pointer;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 .keyALT_CTRL:active {
@@ -304,7 +318,7 @@ select {
 }
 
 .rightShift {
-  width: 5%;
+  width: 5.2%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -324,6 +338,8 @@ select {
 
 .rightShift:hover {
   cursor: pointer;
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
 }
 
 .rightShift:active {

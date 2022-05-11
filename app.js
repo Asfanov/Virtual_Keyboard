@@ -104,10 +104,10 @@ let keyTAB = document.createElement('div');
     keyTAB.innerHTML = "TAB";
     document.querySelectorAll('.keyboardRow')[1].append(keyTAB);
 
-let keyQ = document.createElement('div');
-    keyQ.className = 'key';
-    keyQ.innerHTML = "q";
-    document.querySelectorAll('.keyboardRow')[1].append(keyQ);
+let KeyQ = document.createElement('div');
+    KeyQ.className = 'key KeyQ';
+    KeyQ.innerHTML = "q"; //!!!!!!!
+    document.querySelectorAll('.keyboardRow')[1].append(KeyQ);
 
 let keyW = document.createElement('div');
     keyW.className = 'key';
@@ -245,7 +245,7 @@ let keyEnter = document.createElement('div');
 //четвертая строка
 
 let keyShift = document.createElement('div');
-    keyShift.className = 'keyBACK';
+    keyShift.className = 'keyBACK shift';
     keyShift.innerHTML = 'Shift';
     document.querySelectorAll(".keyboardRow")[3].append(keyShift);
 
@@ -359,24 +359,46 @@ let keyRight = document.createElement('div');
 //начало скрипта ввода символов
 
 let keys  = document.querySelectorAll('.key');
-let display = document.querySelector('.textArea');
+let display = document.querySelector('.textArea'); //добавляет текст в инпут
 let clear = document.querySelector('.keyBACK');
 let delClear = document.querySelector('.keyDel');
 let tab = document.querySelector('.tab');
 let capsLock = document.querySelector('.capsLock');
 let keyCAPS = document.querySelector('.keyCAPS');
+let shift = document.querySelector('.shift');
+let rightShift = document.querySelector('.rightShift')
 
-for (let key of keys) {
+document.addEventListener('keydown', function(event) {
+    if(event.code == KeyQ.className(KeyQ)){
+        display.textContent += KeyQ.textContent;
+        console.log('yes');
+    }
+  });
 
-    key.onclick = function () {
-        if(keyCAPS.classList.contains('capsLock')){
-            display.textContent += key.textContent;
+    for (let key of keys) {
+        key.onclick = function () {
+            // if(keyCAPS.classList.contains('capsLock') && 
+            //     shift.classList.contains('capsLock') ){
+            //     for(let i of keys){
+            //         i.innerHTML = i.innerHTML.toLowerCase();
+            //         shift.onclick();
+            //     }
+            //     display.textContent += key.textContent.toLowerCase();
+            // } 
+             if(keyCAPS.classList.contains('capsLock'))  {
+                display.textContent += key.textContent;
+            } else if(shift.classList.contains('capsLock')){
+                display.textContent += key.textContent.toUpperCase();
+                shift.onclick();
+            } else if (rightShift.classList.contains('capsLock')){
+                display.textContent += key.textContent.toUpperCase();
+                rightShift.onclick();
             } else {
-            display.textContent += key.textContent.toLowerCase();
-            }
+                display.textContent += key.textContent.toLowerCase();
+                } 
         }
+    };
 
- };
 
   clear.onclick = function () {
     display.textContent = display.textContent.replace(/.$/i, '');
@@ -396,12 +418,28 @@ for (let key of keys) {
       console.log('enter');
   }
 
-   keyCAPS.onclick = function() {
-     keyCAPS.classList.toggle('capsLock');
+    function revCollection(x) {
         for(let i of keys){
             i.innerHTML = i.innerHTML.toLowerCase();
-            if(keyCAPS.classList.contains('capsLock')){
+            if(x.classList.contains('capsLock')){
                 i.innerHTML = i.innerHTML.toUpperCase();
             }
         }
+    }
+
+   keyCAPS.onclick = function() {
+     keyCAPS.classList.toggle('capsLock');
+     revCollection(keyCAPS)
+       
+    }
+
+    shift.onclick = function() {
+        shift.classList.toggle('capsLock');
+        revCollection(shift);
+        
+    }
+    rightShift.onclick = function() {
+        rightShift.classList.toggle('capsLock');
+        revCollection(rightShift);
+        
     }
