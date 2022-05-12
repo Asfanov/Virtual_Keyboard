@@ -133,6 +133,7 @@ select {
   cursor: pointer;
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
+  background-color: #0e344e;
   border: 1px solid #24587A;
 }
 

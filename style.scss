@@ -122,6 +122,7 @@ $color-straw: #FFC173; //соломенный
     &:hover{
       cursor: pointer;
       transform: scale(0.98);
+      background-color: #0e344e;
       border: 1px solid $color-secondary;
     }
     &:active{

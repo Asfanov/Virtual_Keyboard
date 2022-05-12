@@ -33,67 +33,67 @@ let keyboardRow5 = document.querySelector('.keyboardRow').cloneNode(true);
         document.querySelector('.keyboardRow').append(keyKey);
 
     let key_1 = document.createElement('div');
-        key_1.className = 'key';
+        key_1.className = 'key Digit1';
         key_1.innerHTML = '1';
         document.querySelector('.keyboardRow').append(key_1);
 
     let key_2 = document.createElement('div');
-        key_2.className = 'key';
+        key_2.className = 'key Digit2';
         key_2.innerHTML = '2';
         document.querySelector('.keyboardRow').append(key_2);
 
     let key_3 = document.createElement('div');
-        key_3.className = 'key';
+        key_3.className = 'key Digit3';
         key_3.innerHTML = '3';
         document.querySelector('.keyboardRow').append(key_3);
 
     let key_4 = document.createElement('div');
-        key_4.className = 'key';
+        key_4.className = 'key Digit4';
         key_4.innerHTML = '4';
         document.querySelector('.keyboardRow').append(key_4);
 
     let key_5 = document.createElement('div');
-        key_5.className = 'key';
+        key_5.className = 'key Digit5';
         key_5.innerHTML = '5';
         document.querySelector('.keyboardRow').append(key_5);
 
     let key_6 = document.createElement('div');
-        key_6.className = 'key';
+        key_6.className = 'key Digit6';
         key_6.innerHTML = '6';
         document.querySelector('.keyboardRow').append(key_6);
 
     let key_7 = document.createElement('div');
-        key_7.className = 'key';
+        key_7.className = 'key Digit7';
         key_7.innerHTML = '7';
         document.querySelector('.keyboardRow').append(key_7);
 
     let key_8 = document.createElement('div');
-        key_8.className = 'key';
+        key_8.className = 'key Digit8';
         key_8.innerHTML = '8';
         document.querySelector('.keyboardRow').append(key_8);
 
     let key_9 = document.createElement('div');
-        key_9.className = 'key';
+        key_9.className = 'key Digit9';
         key_9.innerHTML = '9';
         document.querySelector('.keyboardRow').append(key_9);
 
     let key_0 = document.createElement('div');
-        key_0.className = 'key';
+        key_0.className = 'key Digit0';
         key_0.innerHTML = '0';
         document.querySelector('.keyboardRow').append(key_0);
 
     let key_minus = document.createElement('div');
-        key_minus.className = 'key';
+        key_minus.className = 'key Minus';
         key_minus.innerHTML = '-';
         document.querySelector('.keyboardRow').append(key_minus);
 
     let key_plus = document.createElement('div');
-        key_plus.className = 'key';
+        key_plus.className = 'key Equal';
         key_plus.innerHTML = '+';
         document.querySelector('.keyboardRow').append(key_plus);
 
     let keyBack = document.createElement('div');
-        keyBack.className = 'keyBACK';
+        keyBack.className = 'keyBACK'; 
         keyBack.innerHTML = 'Backspace';
         document.querySelector('.keyboardRow').append(keyBack);
 
@@ -106,66 +106,66 @@ let keyTAB = document.createElement('div');
 
 let KeyQ = document.createElement('div');
     KeyQ.className = 'key KeyQ';
-    KeyQ.innerHTML = "q"; //!!!!!!!
+    KeyQ.innerHTML = "q"; 
     document.querySelectorAll('.keyboardRow')[1].append(KeyQ);
 
-let keyW = document.createElement('div');
-    keyW.className = 'key';
-    keyW.innerHTML = "w";
-    document.querySelectorAll('.keyboardRow')[1].append(keyW);
+let KeyW = document.createElement('div');
+    KeyW.className = 'key KeyW';
+    KeyW.innerHTML = "w";
+    document.querySelectorAll('.keyboardRow')[1].append(KeyW);
 
 let keyE = document.createElement('div');
-    keyE.className = 'key';
+    keyE.className = 'key KeyE';
     keyE.innerHTML = "e";
     document.querySelectorAll('.keyboardRow')[1].append(keyE);
 
 let keyR = document.createElement('div');
-    keyR.className = 'key';
+    keyR.className = 'key KeyR';
     keyR.innerHTML = "r";
     document.querySelectorAll('.keyboardRow')[1].append(keyR);
 
 let keyT = document.createElement('div');
-    keyT.className = 'key';
+    keyT.className = 'key KeyT';
     keyT.innerHTML = "t";
     document.querySelectorAll('.keyboardRow')[1].append(keyT);
 
 let keyY = document.createElement('div');
-    keyY.className = 'key';
+    keyY.className = 'key KeyY';
     keyY.innerHTML = "y";
     document.querySelectorAll('.keyboardRow')[1].append(keyY);
 
 let keyU = document.createElement('div');
-    keyU.className = 'key';
+    keyU.className = 'key KeyU';
     keyU.innerHTML = "u";
     document.querySelectorAll('.keyboardRow')[1].append(keyU);
 
 let keyI = document.createElement('div');
-    keyI.className = 'key';
+    keyI.className = 'key KeyI';
     keyI.innerHTML = "i";
     document.querySelectorAll('.keyboardRow')[1].append(keyI);
 
 let keyO = document.createElement('div');
-    keyO.className = 'key';
+    keyO.className = 'key KeyO';
     keyO.innerHTML = "o";
     document.querySelectorAll('.keyboardRow')[1].append(keyO);
 
 let keyP = document.createElement('div');
-    keyP.className = 'key';
+    keyP.className = 'key KeyP';
     keyP.innerHTML = "p";
     document.querySelectorAll('.keyboardRow')[1].append(keyP);
 
 let keyLeftBracked = document.createElement('div');
-    keyLeftBracked.className = 'key';
+    keyLeftBracked.className = 'key BracketLeft';
     keyLeftBracked.innerHTML = "[";
     document.querySelectorAll('.keyboardRow')[1].append(keyLeftBracked);
 
 let keyRightBracked = document.createElement('div');
-    keyRightBracked.className = 'key';
+    keyRightBracked.className = 'key BracketRight';
     keyRightBracked.innerHTML = "]";
     document.querySelectorAll('.keyboardRow')[1].append(keyRightBracked);
 
 let keyRightSlash = document.createElement('div');
-    keyRightSlash.className = 'key';
+    keyRightSlash.className = 'key Slash';
     keyRightSlash.innerHTML = "/";
     document.querySelectorAll('.keyboardRow')[1].append(keyRightSlash);
 
@@ -183,57 +183,57 @@ let keyCapsLock = document.createElement('div');
     document.querySelectorAll(".keyboardRow")[2].append(keyCapsLock);
 
 let keyA = document.createElement('div');
-    keyA.className = 'key';
+    keyA.className = 'key KeyA';
     keyA.innerHTML = 'a';
     document.querySelectorAll(".keyboardRow")[2].append(keyA);
 
 let keyS = document.createElement('div');
-    keyS.className = 'key';
+    keyS.className = 'key KeyS';
     keyS.innerHTML = 's';
     document.querySelectorAll(".keyboardRow")[2].append(keyS);
 
 let keyD = document.createElement('div');
-    keyD.className = 'key';
+    keyD.className = 'key KeyD';
     keyD.innerHTML = 'd';
     document.querySelectorAll(".keyboardRow")[2].append(keyD);
 
 let keyF = document.createElement('div');
-    keyF.className = 'key';
+    keyF.className = 'key KeyF';
     keyF.innerHTML = 'f';
     document.querySelectorAll(".keyboardRow")[2].append(keyF);
 
 let keyG = document.createElement('div');
-    keyG.className = 'key';
+    keyG.className = 'key KeyG';
     keyG.innerHTML = 'g';
     document.querySelectorAll(".keyboardRow")[2].append(keyG);
 
 let keyH = document.createElement('div');
-    keyH.className = 'key';
+    keyH.className = 'key KeyH';
     keyH.innerHTML = 'h';
     document.querySelectorAll(".keyboardRow")[2].append(keyH);
 
 let keyJ = document.createElement('div');
-    keyJ.className = 'key';
+    keyJ.className = 'key KeyJ';
     keyJ.innerHTML = 'j';
     document.querySelectorAll(".keyboardRow")[2].append(keyJ);
 
 let keyK = document.createElement('div');
-    keyK.className = 'key';
+    keyK.className = 'key KeyK';
     keyK.innerHTML = 'k';
     document.querySelectorAll(".keyboardRow")[2].append(keyK);
 
 let keyL = document.createElement('div');
-    keyL.className = 'key';
+    keyL.className = 'key KeyL';
     keyL.innerHTML = 'l';
     document.querySelectorAll(".keyboardRow")[2].append(keyL);
 
 let keySemicolon = document.createElement('div');
-    keySemicolon.className = 'key';
+    keySemicolon.className = 'key Semicolon';
     keySemicolon.innerHTML = ';';
     document.querySelectorAll(".keyboardRow")[2].append(keySemicolon);
 
 let keyQuotationMarks = document.createElement('div');
-    keyQuotationMarks.className = 'key';
+    keyQuotationMarks.className = 'key Backslash';
     keyQuotationMarks.innerHTML = '\'';
     document.querySelectorAll(".keyboardRow")[2].append(keyQuotationMarks);
 
@@ -253,47 +253,47 @@ let leftKeyRigthSlash = keyRightSlash.cloneNode(true);
     document.querySelectorAll(".keyboardRow")[3].append(leftKeyRigthSlash);
 
 let keyZ = document.createElement('div');
-    keyZ.className = 'key';
+    keyZ.className = 'key KeyZ';
     keyZ.innerHTML = 'z';
     document.querySelectorAll(".keyboardRow")[3].append(keyZ);
 
 let keyX = document.createElement('div');
-    keyX.className = 'key';
+    keyX.className = 'key KeyX';
     keyX.innerHTML = 'x';
     document.querySelectorAll(".keyboardRow")[3].append(keyX);
 
 let keyC = document.createElement('div');
-    keyC.className = 'key';
+    keyC.className = 'key KeyC';
     keyC.innerHTML = 'c';
     document.querySelectorAll(".keyboardRow")[3].append(keyC);
 
 let keyV = document.createElement('div');
-    keyV.className = 'key';
+    keyV.className = 'key KeyV';
     keyV.innerHTML = 'v';
     document.querySelectorAll(".keyboardRow")[3].append(keyV);
 
 let keyB = document.createElement('div');
-    keyB.className = 'key';
+    keyB.className = 'key KeyB';
     keyB.innerHTML = 'b';
     document.querySelectorAll(".keyboardRow")[3].append(keyB);
 
 let keyN = document.createElement('div');
-    keyN.className = 'key';
+    keyN.className = 'key KeyN';
     keyN.innerHTML = 'n';
     document.querySelectorAll(".keyboardRow")[3].append(keyN);
 
 let keyM = document.createElement('div');
-    keyM.className = 'key';
+    keyM.className = 'key KeyM';
     keyM.innerHTML = 'm';
     document.querySelectorAll(".keyboardRow")[3].append(keyM);
 
 let keyDot = document.createElement('div');
-    keyDot.className = 'key';
+    keyDot.className = 'key Period';
     keyDot.innerHTML = '.';
     document.querySelectorAll(".keyboardRow")[3].append(keyDot);
 
 let keyComma = document.createElement('div');
-    keyComma.className = 'key';
+    keyComma.className = 'key Comma';
     keyComma.innerHTML = ',';
     document.querySelectorAll(".keyboardRow")[3].append(keyComma);
 
@@ -369,23 +369,16 @@ let shift = document.querySelector('.shift');
 let rightShift = document.querySelector('.rightShift')
 
 document.addEventListener('keydown', function(event) {
-    if(event.code == KeyQ.className(KeyQ)){
-        display.textContent += KeyQ.textContent;
-        console.log('yes');
-    }
+    x = document.querySelector(`.${event.code}`)
+    display.textContent += x.textContent;
+    
   });
+
+ 
 
     for (let key of keys) {
         key.onclick = function () {
-            // if(keyCAPS.classList.contains('capsLock') && 
-            //     shift.classList.contains('capsLock') ){
-            //     for(let i of keys){
-            //         i.innerHTML = i.innerHTML.toLowerCase();
-            //         shift.onclick();
-            //     }
-            //     display.textContent += key.textContent.toLowerCase();
-            // } 
-             if(keyCAPS.classList.contains('capsLock'))  {
+            if(keyCAPS.classList.contains('capsLock'))  {
                 display.textContent += key.textContent;
             } else if(shift.classList.contains('capsLock')){
                 display.textContent += key.textContent.toUpperCase();
