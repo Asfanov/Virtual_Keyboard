@@ -1,0 +1,267 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+// окончание обнуляющих стилей
+
+
+//colors
+$color-main: #0A67A3;	
+$color-secondary: #24587A;
+$color-orange: #FF8E00;
+$color-straw: #FFC173; //соломенный
+// https://colorscheme.ru/#3v21Tw0w0w0w0
+
+.textArea{
+  width: 50%;
+  height: 200px;
+  display: block;
+  margin: 10% auto 0;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.keyboardBody{
+    width: 80%;
+    height: 400px;
+    margin: 20px auto 0;
+}
+.keyboardRow{
+    width: 100%;
+    height: 18.8%;
+    margin-bottom: 0.5%;
+    display: flex;
+    justify-content: space-between;
+  }
+.key{
+  width: 5.5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px;
+  border-radius: 10px;
+  background-color: #0f4061;
+  color: #e8eff3;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+    &:hover{
+      cursor: pointer;
+      transform: scale(0.98);
+      background-color: #0e344e;
+      border: 1px solid $color-secondary;
+    }
+    &:active{
+      transform: scale(0.95);
+    }
+}
+.keyArrow {
+  width: 5.5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px;
+  border-radius: 10px;
+  background-color: $color-orange;
+  color: $color-main;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  &:hover{
+    cursor: pointer;
+    transform: scale(0.98);
+    border: 1px solid $color-secondary;
+  }
+  &:active{
+    transform: scale(0.94);
+  }
+}
+.keyTAB{
+  width: 12%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $color-orange;
+  border-radius: 5px;
+  color: $color-secondary;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  &:hover{
+    cursor: pointer;
+    transform: scale(0.99);
+  }
+  &:active{
+    transform: scale(0.97);
+  }
+}
+.keyBACK{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $color-orange;
+  border-radius: 5px;
+  color: $color-secondary;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+   &:hover{
+      cursor: pointer;
+      transform: scale(0.99);
+    }
+    &:active{
+      transform: scale(0.95);
+    }
+}
+.keyEnter{
+  width: 13%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $color-orange;
+  border-radius: 5px;
+  color: $color-secondary;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  &:hover{
+    cursor: pointer;
+    transform: scale(0.99);
+  }
+  &:active{
+    transform: scale(0.95);
+  }
+}
+.space{
+  width: 51%;
+  height: 100%;
+  text-align: center;
+  border: 1px solid $color-orange;
+  color: $color-secondary;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  &:hover{
+    cursor: pointer;
+  }
+  &:active{
+    transform: scale(0.97);
+  }
+}
+.capsLock{
+  background-color: $color-orange;
+}
+.keyALT_CTRL{
+  width: 5.5%;
+  height: 100%;
+  border: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #0f4061;
+  color: #e8eff3;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+    &:hover{
+      cursor: pointer;
+      transform: scale(0.98);
+    }
+    &:active{
+      transform: scale(0.97);
+    }
+}
+
+.rightShift{
+  width: 5.2%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $color-orange;
+  border-radius: 5px;
+  color: $color-secondary;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+   &:hover{
+      cursor: pointer;
+      transform: scale(0.99);
+    }
+    &:active{
+      transform: scale(0.97);
+    }
+}
